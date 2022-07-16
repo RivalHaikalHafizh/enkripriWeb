@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Enkripsi</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.header{
+			width: 100%;
+			padding: 5px;
+			box-sizing: border-box;
+			background-color: grey;
+			border-bottom: 5px solid black;
+		}
+		.hasilenkripsi{
+			margin: 10px 0px;
+			width: 500px;
+			height: 100px;
+			border: 1px solid black; 
+			overflow: auto;
+		}
+		.hasildeskripsi{
+			margin: 10px 0px;
+			width: 500px;
+			height: 100px;
+			border: 1px solid black;
+			overflow: auto;
+		}
+		.operation1{
+			padding: 50px;
+
+		}
+		.operation2{
+			padding: 50px;
+
+		}
+		.container{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			
+		}
+
+	</style>
+</head>
+<body>
+	<!-- @rivalhaikalh -->
+	<div class="header">
+		<h1>Enkripsi & Deskripsi</h1>
+		<h4>@rivalhaikalh</h4>
+	</div>
+	<div class="container">
+	<div class="operation1">
+	<form action="">
+	<label for="plaintext">plaintext :</label>
+	<input type="text" id="plaintext" placeholder="teks biasa" autocomplete="">
+	<label for="key">key:</label>
+	<input type="password" id="keysatu" placeholder="rahasia" autocomplete="">
+	<input type="checkbox" onClick="showSatu()">Tampilkan key
+	</form>
+	<div class="hasilenkripsi"></div>
+	<button id="tmblenkripsi">Enkripsi</button>
+	</div>
+	<div class="operation2">	
+	<form action="">
+	<label for="chipertext">chipertext :</label>
+	<input type="text" id="chipertext" placeholder="teks rahasia" autocomplete="">
+	<label for="key">key:</label>
+	<input type="password" id="keydua" placeholder="rahasia" autocomplete="">
+	<input type="checkbox" onclick="showDua()">Tampilkan key
+	</form>
+	<div class="hasildeskripsi"></div>
+	<button id="tmbldeskripsi">Deskripsi</button>	
+	</div>
+	</div>
+
+<script src="enkripsi.js"></script>	
+</body>
+</html>
